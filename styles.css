@@ -1,0 +1,439 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  /* bg colors */
+  --background: #FDF3DF;
+  --primary: #FCC852;
+  --secondary: #F76932;
+  --btn-bg: #F76932;
+  --bg-white: #fff;
+  --bg: #f0fbff;
+}
+
+/* Header */
+
+header {
+  background-color: black;
+  width: 100%;
+  top: 0;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 0px 30px 0px 30px;
+  margin: 0 auto;
+  z-index: 999;
+}
+
+.logo {
+  height: 55px;
+}
+
+.navbar {
+  gap: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.navbar-list a {
+  color: white;
+  font-size: 15px;
+}
+
+.cart-icon {
+  padding: 12px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-label {
+  display: none;
+}
+
+/* Carrito */
+.cart {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  background: linear-gradient(to top, #121e3c, #02050e);
+  border-left: 1px solid var(--nav-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  z-index: 2;
+  min-width: 375px;
+  transform: translate(200%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*OCULTAR BARRA DE SCROLL DEL CARRITO*/
+
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart h2 {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #2323234e;
+  padding: 20px;
+  border: 1px solid var(--electric);
+  border-radius: 10px;
+}
+
+.cart-item img {
+  height: 65px;
+  width: 65px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 110px;
+}
+
+.item-title {
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.item-price {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: var(--text-white);
+  font-weight: 400;
+}
+
+.item-quantity {
+  color: var(--text-gray);
+}
+
+.up {
+  border: 1px solid var(--electric);
+}
+
+.down {
+  background-color: var(--secondary);
+  border: 1px solid var(--electric);
+}
+
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid var(--electric);
+  width: 100%;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.cart-total p {
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.cart-total span {
+  color: var(--text-white);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/*Toggle del carro*/
+.open-cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+}
+
+.empty-msg {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+
+
+/*  Hero */
+main {
+  background-color: black;
+}
+
+#hero {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+
+.hero-part1 {
+  background-color: black;
+  width: 50%;
+}
+
+.hero-part2 {
+  width: 50%;
+  background-image: url(/assets/img/Spider-hero2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-hero {
+  width: 300px;
+}
+
+.hero-title {
+  width: 500px;
+}
+
+.subtitle-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.subtitle-hero {
+  font-size: 30px;
+  color: rgba(121, 9, 9, 1);
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px #f0fbffde;
+}
+
+.subtitle-info {
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+
+/* SECTION INFORMATION */
+#information {
+  margin-top: 100px;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.information-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.information-title h2 {
+  font-size: 50px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 800;
+  color: rgba(121, 9, 9, 1);
+  text-shadow: 1px 1px 1px seashell;
+}
+
+.information-title p {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Kanit', cursive;
+  color: white;
+}
+
+.info-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  width: 100%;
+}
+
+.info-card {
+  width: 340px;
+  height: 450px;
+  margin: 0px 20px 0px 20px;
+  background: rgb(36, 0, 0);
+  background: linear-gradient(90deg, rgba(36, 0, 0, 1) 0%, rgba(121, 9, 9, 1) 35%, rgba(255, 0, 0, 1) 100%);
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container-img-card1 {
+  background-image: url(/assets/img/spider-miles5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: -50px;
+  height: 260px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container-img-card2 {
+  background-image: url(/assets/img/spider-fondo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: -50px;
+  height: 260px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.container-img-card3 {
+  background-image: url(/assets/img/spider-miles1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  margin-top: -50px;
+  height: 260px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.info-card-title {
+  font-size: 23px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.info-card-text {
+  font-weight: 700;
+  font-family: "Poppins";
+  color: #909296;
+}
+
+.button-card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  width: 120px;
+  height: 30px;
+  border-color: white;
+  color: black;
+  box-shadow: 0 0 40px 40px #fcfcfc inset, 0 0 0 0 #ffffff;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 2px;
+}
+
+
+/* NEW RELEASES DIV */
+.new-releases-container {
+  text-align: center;
+}
+
+.new-releases-movie {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.new-releases-date {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.background-spider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/assets/img/spiderMan-Poster.PNG);
+  height: 90vh;
+  width: 1200px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
