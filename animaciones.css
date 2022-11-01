@@ -1,0 +1,30 @@
+/* Animaciones para el navbar */
+.navbar-list li {
+    position: relative;
+    padding: 0;
+  }
+  
+  .navbar-list li a::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.15s ease;
+  }
+  
+  .navbar-list li a:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+  }
+
+  .button-card:hover:hover {
+    box-shadow: 0 0 10px 0 #fcfcfc inset, 0 0 10px 4px #ffffff;
+    color: white;
+  }
+
+  
