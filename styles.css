@@ -411,6 +411,10 @@ main {
 /* NEW RELEASES DIV */
 .new-releases-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .new-releases-movie {
@@ -426,14 +430,45 @@ main {
   font-weight: 900;
 }
 
-.background-spider {
+.carrousel {
+  width: 90%;
+  max-width: 120cm;
+  padding: 2em;
+  overflow:hidden;
+}
+
+.carrousel .grande {
+  width: 150%;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  transition: all 3s ease;
+  transform: translateX(0%);
+}
+
+.carrousel .img-carrousel {
+  width: 350px;
+  height: 500px;
+}
+.puntos{
+  width: 100%;
+  padding: .4em;
+  margin: 1em 0 0;
+  display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background-image: url(/assets/img/spiderMan-Poster.PNG);
-  height: 90vh;
-  width: 1200px;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.punto{
+  width: 2em;
+  height: 2em;
+  font-size: 35px;
+  cursor: pointer;
+  margin: 1em 1em 0;
+  color: white
+}
+.carrousel .punto.activo{
+  color: red;
 }
