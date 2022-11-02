@@ -27,4 +27,8 @@
     color: white;
   }
 
-  
+  /* Animaciones para los card de info */
+  .info-card:hover{
+    background-color:#e62429; 
+    transition: all 1s ease;
+  }
