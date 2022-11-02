@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/animaciones.css">
+
 </head>
 
 <body>
@@ -24,7 +25,7 @@
             <ul class="navbar-list">
                 <li><a class="navbar-link" href="#comics">Comics</a></li>
                 <li><a class="navbar-link" href="#movies">Movies</a></li>
-                <li><a class="navbar-link" href="#games">Games</a></li>
+                <li><a class="navbar-link" href="#section-games">Games</a></li>
                 <li><a class="navbar-link" href="https://www.youtube.com/channel/UC8LEXZO4hjzVk6wO3G9pJyQ"
                         target="_blank">Youtube</a></li>
             </ul>
@@ -56,16 +57,17 @@
                 </div>
                 <div class="subtitle-container">
                     <h3 class="subtitle-hero">THE OFFICIAL STORE</h3>
-                    <p class="subtitle-info">Tienda Oficial del Superheroe favorito, SpiderMan. Puedes adquirir todo el contenido digital y tenerlo en todos tus dispositivos a través de nuestra APP.</p>
+                    <p class="subtitle-info">Tienda Oficial del Superheroe favorito, SpiderMan. Puedes adquirir todo el
+                        contenido digital y tenerlo en todos tus dispositivos a través de nuestra APP.</p>
                 </div>
             </div>
 
             <div class="hero-part2">
             </div>
-           
-        </section> 
 
-           <section id="information">
+        </section>
+
+        <section id="information">
             <div class="information-title">
                 <h2>EXPLORA, SELECCIONA y COMPRA</h2>
                 <p>En el mundo DIGITAL DE PETER PARKER</p>
@@ -74,34 +76,60 @@
                 <div class="info-card">
                     <div class="container-img-card1"></div>
                     <p class="info-card-title">REGISTRA TU CUENTA</p>
-                    <p class="info-card-text">Inicia sesión en nuestra APP o Web y comienza con la configuración de tu cuenta SPIDY</p>
+                    <p class="info-card-text">Inicia sesión en nuestra APP o Web y comienza con la configuración de tu
+                        cuenta SPIDY</p>
                     <a href="#" class="button-card">Log in</a>
                 </div>
                 <div class="info-card">
                     <div class="container-img-card2"></div>
                     <p class="info-card-title">EXPLORA</p>
-                    <p class="info-card-text">Descubre todo sobre el mundo SPIDER ¡Comics, Games y Movies!¡Contenido nuevo todas las semanas!</p>
+                    <p class="info-card-text">Descubre todo sobre el mundo SPIDER ¡Comics, Games y Movies!¡Contenido
+                        nuevo todas las semanas!</p>
                     <a href="#" class="button-card">Ver más</a>
                 </div>
                 <div class="info-card">
                     <div class="container-img-card3"></div>
                     <p class="info-card-title">COMPRA</p>
-                    <p class="info-card-text">Adquiere todo el contenido y lo tienes disponible en todos tus dispositivos a través de nuestra APP</p>
+                    <p class="info-card-text">Adquiere todo el contenido y lo tienes disponible en todos tus
+                        dispositivos a través de nuestra APP</p>
                     <a href="#" class="button-card">Ver más</a>
                 </div>
 
             </div>
 
-            <div class="new-releases-container">
-            <p class="new-releases-movie">Movies</p>
-            <h3 class="new-releases-date">DICIEMBRE 22: NUEVO LANZAMIENTO</h3>
-            <div class="background-spider"></div>
+            <div class="new-releases-container" id="movies">
+                <p class="new-releases-movie">Movies</p>
+                <h3 class="new-releases-date">DICIEMBRE 22: NUEVO LANZAMIENTO</h3>
+                <div class="carrousel">
+                    <div class="grande">
+                        <img src="/assets/img/spiderman-poster6.jpg" alt="" class="img-carrousel">
+                        <img src="/assets/img/spiderman-poster5.jpg" alt="" class="img-carrousel">
+                        <img src="/assets/img/spiderman-poster3.jpg" alt="" class="img-carrousel">
+                    </div>
+                    <ul class="puntos">
+                        <li class="punto"><i class="fa-solid fa-angle-left"></i></li>
+                        <li class="punto"><i class="fa-solid fa-angle-right"></i></li>
+                    </ul>
+                </div>
             </div>
-            
+        </section>
+        <section id="section-games">
+            <div class="text-games-container">
+                <h2 class="title-games"> 
+                    ¡Descubre los juegos retro más buscados!
+                </h2>
+                <p class="text-games">
+                    Tienes la oportunidad de coleccionar los juegos retro más jugado de todos los tiempos !Ahora disponible en todas las Plataformas Digitales¡
+                </p>
+                <a class="games-verMas" href="#">Ver más</a>
+            </div>
+            <div>
+
+            </div>
 
         </section>
     </main>
-    <script src="/request.js"></script>
+    <script src="/main.js"></script>
 </body>
 
 </html>
