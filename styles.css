@@ -558,3 +558,119 @@ main {
   transform: scale(1.1, 1.13);
   transition: all 2s ease;
 }
+
+/* Comics Section */
+#section-comics{
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section-comics h2{
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.buttons-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.category{
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px 0;
+  background-color: black;
+}
+
+.footer-1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 25px;
+}
+
+.footer-1 img {
+  width: 170px;
+}
+
+.footer-1i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.footer-1i a {
+  font-size: 30px;
+  color: white;
+}
+
+.footer-2 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  margin: 25px;
+}
+
+.footer-2 a h4 {
+  color: white;
+  font-weight: var(--medium);
+}
+
+.footer-2 a {
+  font-weight: var(--thin);
+  color: #8fa3b0;
+}
+
+.footer-3 {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  margin: 25px;
+}
+
+.footer-3 a h4 {
+  color: white;
+  font-weight: var(--medium);
+}
+
+.firma {
+  background-color: #111111;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.firma h6 {
+  font-weight: 100;
+  font-size: 15px;
+}
