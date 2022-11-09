@@ -32,3 +32,17 @@
     background-color:#e62429; 
     transition: all 1s ease;
   }
+
+
+/*   Animaciones footer */
+.footer-1i a:hover {
+  color: #e62429;
+}
+
+.footer-2 a:hover {
+  border-right: 1px solid white;
+}
+
+.footer-3 a h4:hover {
+  border-right: 1px solid white;
+}
