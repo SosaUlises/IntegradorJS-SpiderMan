@@ -1,3 +1,25 @@
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+
+  /*Efecto de Glassmorphismo*/
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+  Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+.show-overlay {
+  display: block;
+}
+
 /* Animaciones para el navbar */
 .navbar-list li {
   position: relative;
@@ -25,6 +47,18 @@
 .button-card:hover:hover {
   box-shadow: 0 0 10px 0 #fcfcfc inset, 0 0 10px 4px #ffffff;
   color: white;
+}
+
+/* Animaciones para el carro */
+.disabled:hover {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+  border: none;
+}
+.btn-deleted:hover{
+  background-color: #e62429;
+  transition: 0.3s all ease-in;
 }
 
 /* Animaciones para los card de info */
