@@ -134,6 +134,97 @@ const comicsData = [
         cardImg: "./assets/img/comic15.jpg",
         category: "Amazing"
     },
+    {
+        id: 16,
+        name: "The Amazing Spiderman",
+        precio: 160,
+        year: 2011,
+        edicion: "#179",
+        cardImg: "./assets/img/comic16.jpg",
+        category: "Amazing"
+    },
+    {
+        id: 17,
+        name: "Miles Morales",
+        precio: 125,
+        year: 2018,
+        edicion: "#370",
+        cardImg: "./assets/img/comic17.jpg",
+        category: "Miles"
+    },
+    {
+        id: 18,
+        name: "The Amazing Spiderman",
+        precio: 175,
+        year: 2005,
+        edicion: "#57",
+        cardImg: "./assets/img/comic18.jpg",
+        category: "Amazing"
+    },
+    {
+        id: 19,
+        name: "The Amazing Spiderman",
+        precio: 160,
+        year: 2010,
+        edicion: "#111",
+        cardImg: "./assets/img/comic19.jpg",
+        category: "Amazing"
+    },
+    {
+        id: 20,
+        name: "Norman Osborn",
+        precio: 290,
+        year: 2009,
+        edicion: "#100",
+        cardImg: "./assets/img/comic20.jpg",
+        category: "Varios"
+    },
+    {
+        id: 21,
+        name: "Symbiote",
+        precio: 180,
+        year: 2017,
+        edicion: "#419",
+        cardImg: "./assets/img/comic21.jpg",
+        category: "Venom"
+    },
+    {
+        id: 22,
+        name: "The Amazing Spiderman",
+        precio: 230,
+        year: 2005,
+        edicion: "#57",
+        cardImg: "./assets/img/comic22.jpg",
+        category: "Amazing"
+    },
+    {
+        id: 23,
+        name: "The Amazing Spiderman",
+        precio: 200,
+        year: 2016,
+        edicion: "#329",
+        cardImg: "./assets/img/comic23.jpg",
+        category: "Amazing"
+    },
+    {
+        id: 24,
+        name: "Mysterio",
+        precio: 300,
+        year: 2008,
+        edicion: "#44",
+        cardImg: "./assets/img/comic24.jpg",
+        category: "Varios"
+    },
+    {
+        id: 25,
+        name: "Spiderman vs Venom",
+        precio: 210,
+        year: 2015,
+        edicion: "#228",
+        cardImg: "./assets/img/comic25.jpg",
+        category: "Venom"
+    },
+    
 ];
 
 // Para hacer la paginacion de Ver Más
