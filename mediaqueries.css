@@ -253,7 +253,7 @@
         flex-wrap: wrap;
     }
 
-
+    /* footer */
     #footer {
         flex-wrap: wrap;
         width: 100%;
@@ -271,4 +271,28 @@
         width: 35%;
     }
 
+}
+
+@media (max-width:479px){
+
+    .hero-title{
+        width: 370px;
+    }
+
+    .carrousel {
+        max-width: 40vh;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .carrousel .img-carrousel {
+        width: 240px;
+        height: 355px;
+        margin-right: 30px;
+    }
+
+    .card-img-games {
+        width: 180px;
+        height: 220px;
+    }
 }
