@@ -1,6 +1,6 @@
 /* Tablet */
 @media (max-width: 1200px) {
-    
+
 
     /*  Carrito y navbar */
     .cart-icon {
@@ -89,18 +89,21 @@
 }
 
 /* Tablet Media scren */
-@media (max-width: 700px){
-    .hero-title{
+@media (max-width: 760px) {
+    .hero-title {
         width: 90%;
     }
-    .buttons-container{
+
+    .buttons-container {
         gap: 5px;
     }
+
     .carrousel {
         max-width: 65vh;
         width: 100%;
     }
-    .information-title h2{
+
+    .information-title h2 {
         text-align: center;
     }
 
@@ -108,23 +111,30 @@
         width: 300px;
         height: 450px;
     }
+
     .card-img-games {
         width: 350px;
         height: 80%;
-      }
-      .subtitle-hero{
+    }
+
+    .subtitle-hero {
         text-align: center;
-      }
+    }
+
+    .disabled-mq {
+        display: none;
+    }
 }
 
 /* Celu */
 @media (max-width: 576px) {
-   
+
     /* Hero */
     .hero-part1 {
         width: 100%;
     }
-    .hero-title{
+
+    .hero-title {
         width: 400px;
     }
 
@@ -273,9 +283,9 @@
 
 }
 
-@media (max-width:479px){
-    .hero-title{
-        width: 370px;
+@media (max-width:495px) {
+    .hero-title {
+        width: 400px;
     }
 
     .carrousel {
@@ -296,15 +306,15 @@
     }
 }
 
-@media(max-width:375px){
+@media(max-width:375px) {
     .carrousel .img-carrousel {
         width: 200px;
         height: 310px;
     }
 }
 
-@media(min-width:300px){
-    .hero-title{
+@media(max-width:400px) {
+    .hero-title {
         width: 320px;
     }
 }
