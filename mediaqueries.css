@@ -177,9 +177,13 @@
     }
 
     .information-title h2 {
-        font-size: 40px;
+        font-size: 35px;
         padding: 5px;
         margin-bottom: 20px;
+        text-align: center;
+    }
+    .information-title p{
+        font-size: 15px;
     }
 
     /*  Movies */
@@ -304,6 +308,8 @@
         width: 180px;
         height: 220px;
     }
+    .information-title h2 {
+        font-size: 30px;}
 }
 
 @media(max-width:375px) {
