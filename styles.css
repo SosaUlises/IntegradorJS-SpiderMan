@@ -60,6 +60,10 @@ header {
 .menu-label {
   display: none;
 }
+.sesion{
+  font-weight: 700;
+  font-size: 20px;
+}
 
 /* Carrito */
 .cart {
@@ -289,7 +293,7 @@ main {
 .subtitle-hero {
   margin-top: 10px;
   font-size: 30px;
-  color: rgba(121, 9, 9, 1);
+  color: rgb(143, 14, 14);
   font-family: 'Kanit', sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px #f0fbffde;
@@ -322,10 +326,10 @@ main {
 }
 
 .information-title h2 {
-  font-size: 50px;
   font-family: 'Kanit', sans-serif;
-  font-weight: 800;
-  color: rgba(121, 9, 9, 1);
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
   text-shadow: 1px 1px 1px seashell;
 }
 
@@ -446,6 +450,7 @@ main {
   color: white;
   font-size: 40px;
   font-weight: 900;
+  text-shadow: 1px 1px 1px seashell;
 }
 
 .carrousel {
@@ -523,6 +528,7 @@ main {
   color: white;
   font-size: 40px;
   font-weight: 900;
+  text-shadow: 1px 1px 1px seashell;
 }
 
 .text-games {
@@ -540,6 +546,9 @@ main {
   text-align: center;
   padding: 10px;
   color: white;
+}
+.active-mq{
+  display: none;
 }
 
 .games-verMas {
@@ -589,6 +598,7 @@ main {
   font-size: 40px;
   font-weight: 900;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 1px seashell;
 }
 
 .buttons-container{
