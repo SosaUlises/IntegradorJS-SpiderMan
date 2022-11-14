@@ -48,6 +48,9 @@
   box-shadow: 0 0 10px 0 #fcfcfc inset, 0 0 10px 4px #ffffff;
   color: white;
 }
+.sesion:hover{
+  color: #e6242bce;
+}
 
 /* Animaciones para el carro */
 .disabled:hover {
