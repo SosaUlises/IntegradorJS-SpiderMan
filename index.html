@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SpiderMan</title>
     <!--Font-Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/animaciones.css">
+    <link rel="stylesheet" href="/mediaqueries.css">
 
 </head>
 
@@ -26,8 +27,8 @@
                 <li><a class="navbar-link" href="#section-comics">Comics</a></li>
                 <li><a class="navbar-link" href="#movies">Movies</a></li>
                 <li><a class="navbar-link" href="#section-games">Games</a></li>
-                <li><a class="navbar-link" href="https://www.youtube.com/channel/UC8LEXZO4hjzVk6wO3G9pJyQ"
-                        target="_blank">Youtube</a></li>
+                <li><a class="navbar-link sesion" href="/login-register/login.html">Login</a></li>
+                <li><a class="navbar-link sesion" href="/login-register/register.html">Register</a></li>
             </ul>
 
             <div class="cart-label">
@@ -66,7 +67,7 @@
             </div>
 
         </section>
-
+        <div class="sticker-container"><div class="sticker-responsive"></div></div>
         <section id="information">
             <div class="information-title">
                 <h2>EXPLORA, SELECCIONA y COMPRA</h2>
@@ -78,21 +79,21 @@
                     <p class="info-card-title">REGISTRA TU CUENTA</p>
                     <p class="info-card-text">Inicia sesión en nuestra APP o Web y comienza con la configuración de tu
                         cuenta SPIDY</p>
-                    <a href="#" class="button-card">Log in</a>
+                    <a href="/login-register/login.html" class="button-card">Log in</a>
                 </div>
                 <div class="info-card">
                     <div class="container-img-card2"></div>
                     <p class="info-card-title">EXPLORA</p>
                     <p class="info-card-text">Descubre todo sobre el mundo SPIDER ¡Comics, Games y Movies!¡Contenido
                         nuevo todas las semanas!</p>
-                    <a href="#" class="button-card">Ver más</a>
+                    <a href="#section-games" class="button-card">Ver más</a>
                 </div>
                 <div class="info-card">
                     <div class="container-img-card3"></div>
                     <p class="info-card-title">COMPRA</p>
                     <p class="info-card-text">Adquiere todo el contenido y lo tienes disponible en todos tus
                         dispositivos a través de nuestra APP</p>
-                    <a href="#" class="button-card">Ver más</a>
+                    <a href="#section-comics" class="button-card">Ver más</a>
                 </div>
 
             </div>
@@ -104,7 +105,7 @@
                     <div class="grande">
                         <img src="/assets/img/spiderman-poster6.jpg" alt="" class="img-carrousel">
                         <img src="/assets/img/spiderman-poster5.jpg" alt="" class="img-carrousel">
-                        <img src="/assets/img/spiderman-poster3.jpg" alt="" class="img-carrousel">
+                        <img src="/assets/img/spiderman-poster3.jpg" alt="" class="img-carrousel disabled-mq">
                     </div>
                     <ul class="puntos">
                         <li class="punto"><i class="fa-solid fa-angle-left"></i></li>
@@ -113,6 +114,7 @@
                 </div>
             </div>
         </section>
+
         <section id="section-games">
             <div class="text-games-container">
                 <h2 class="title-games">
@@ -135,6 +137,9 @@
                 </div>
                 <div class="card-img-games">
                     <img class="img-games" src="/assets/img/spiderman-game3.jpg" alt="juegoSpider">
+                </div>
+                <div class="card-img-games active-mq">
+                    <img class="img-games" src="/assets/img/spiderman-game2.jpg" alt="juegoSpider">
                 </div>
             </div>
         </section>
