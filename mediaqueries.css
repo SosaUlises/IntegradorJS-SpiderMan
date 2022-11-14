@@ -274,7 +274,6 @@
 }
 
 @media (max-width:479px){
-
     .hero-title{
         width: 370px;
     }
@@ -294,5 +293,18 @@
     .card-img-games {
         width: 180px;
         height: 220px;
+    }
+}
+
+@media(max-width:375px){
+    .carrousel .img-carrousel {
+        width: 200px;
+        height: 310px;
+    }
+}
+
+@media(min-width:300px){
+    .hero-title{
+        width: 320px;
     }
 }
