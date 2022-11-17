@@ -52,7 +52,7 @@
 
     /* Hero */
     .hero-title {
-        width: 350px;
+        width: 400px;
     }
 
 
@@ -61,14 +61,52 @@
     }
 
     /* Section Information */
-    .info-card-container {
-        gap: 65px;
+
+    .section-comprar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1500px;
+    }
+    .contenido{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenido h4{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .contenido h2{
+        width: 400px;
+        text-align: center;
+    }
+    .contenido p{
+        text-align: center;
+    }
+    .imgs-contenedor{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
-    .information-title h2 {
-        color: white;
-        font-size: 40px;
-        font-weight: 900;
+    .contenedor-2-img{
+        width: 300px;
+        height: 1300px;
+    }
+    .contenedor-3{
+        width: 100%;
+    }
+    .contenedor-top{
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedor-top h3{
+        padding: 0px;
+        text-align: center;
+    }
+    .contenedor-top p{
+        padding: 0px;
     }
 
     /* Carrousel */
@@ -85,13 +123,41 @@
     #section-games {
         margin-top: 0px;
     }
+    .buttons-container{
+        flex-wrap: wrap;
+    }
 
 }
 
 /* Tablet Media scren */
 @media (max-width: 760px) {
     .hero-title {
-        width: 90%;
+        width: 450px;
+    }
+
+    .hero-part2 {
+        display: none;
+    }
+
+    .subtitle-info {
+        width: 100%;
+    }
+
+    .sticker-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+
+    .sticker-responsive {
+        background-image: url(/assets/img/logo-login.png);
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .buttons-container {
@@ -101,6 +167,7 @@
     .carrousel {
         max-width: 65vh;
         width: 100%;
+        margin-bottom: 100px;
     }
 
     .information-title h2 {
@@ -109,7 +176,7 @@
 
     .carrousel .img-carrousel {
         width: 300px;
-        height: 450px;
+        height: 400px;
     }
 
     .card-img-games {
@@ -123,6 +190,20 @@
 
     .disabled-mq {
         display: none;
+    }
+    .buttons-container {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .text-games-container{
+        margin-bottom: 100px;
+    }
+    #section-games{
+        margin-bottom: 0px;
+    }
+    #section-comics{
+        margin-top: 50px;
     }
 }
 
@@ -167,23 +248,14 @@
         background-position: center;
     }
 
+    .contenido h2{
+        font-size: 40px;
+        text-align: center;
+        width: 300px;
+    }
     /* Information */
     #information {
         margin-top: 20px;
-    }
-
-    .information-title {
-        text-align: center;
-    }
-
-    .information-title h2 {
-        font-size: 35px;
-        padding: 5px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .information-title p{
-        font-size: 15px;
     }
 
     /*  Movies */
@@ -196,7 +268,7 @@
     }
 
     .carrousel {
-        max-width: 65vh;
+        max-width: 55vh;
         width: 100%;
     }
 
@@ -219,6 +291,7 @@
     .title-games {
         height: 150px;
         width: 100%;
+        margin-bottom: 50px;
     }
 
     .text-games {
@@ -308,8 +381,10 @@
         width: 180px;
         height: 220px;
     }
+
     .information-title h2 {
-        font-size: 30px;}
+        font-size: 30px;
+    }
 }
 
 @media(max-width:375px) {
