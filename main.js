@@ -1,3 +1,4 @@
+// Selectores
 const grande = document.querySelector(".grande");
 const punto = document.querySelectorAll(".punto");
 const comicsContainer = document.querySelector(".comics-container");
