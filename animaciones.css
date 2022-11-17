@@ -64,9 +64,13 @@
   transition: 0.3s all ease-in;
 }
 
-/* Animaciones para los card de info */
-.info-card:hover {
-  background-color: #e62429;
+/* Animaciones para buttons del segundo section */
+.buttons:hover {
+  background-color: red;
+  transition: all 1s ease;
+}
+.buttons-1:hover{
+  background-color: red;
   transition: all 1s ease;
 }
 
