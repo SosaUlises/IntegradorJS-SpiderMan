@@ -1,7 +1,6 @@
 /* Tablet */
 @media (max-width: 1200px) {
 
-
     /*  Carrito y navbar */
     .cart-icon {
         border: 0px solid;
@@ -51,13 +50,28 @@
     }
 
     /* Hero */
+    #hero{
+        flex-direction: column;
+        height: 1300px;
+        padding: 0px;
+    }
+    .hero-part1 {
+        width: 100%;
+       height: 50%;
+    }
+
     .hero-title {
         width: 400px;
     }
-
+    .hero-part2 {
+        height: 80vh;
+        display: block;
+        width: 95vw;
+        border-radius: 0px;
+    }
 
     .title-container {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     /* Section Information */
@@ -111,7 +125,7 @@
 
     /* Carrousel */
     .carrousel {
-        max-width: 100vh;
+        max-width: 90vh;
         width: 100%;
     }
 
@@ -130,34 +144,31 @@
 }
 
 /* Tablet Media scren */
-@media (max-width: 760px) {
+@media (max-width: 1050px) {
     .hero-title {
         width: 450px;
     }
+    /* Hero */
+    #hero{
+        flex-direction: column;
+        height: 1300px;
+        padding: 0px;
+    }
+    .hero-part1 {
+        margin-top: 150px;
+        width: 100%;
+        height: 50%;
+    }
 
     .hero-part2 {
-        display: none;
+        height: 50%;
+        display: block;
+        width: 100%;
+        border-radius: 0px;
     }
 
     .subtitle-info {
         width: 100%;
-    }
-
-    .sticker-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
-    }
-
-    .sticker-responsive {
-        background-image: url(/assets/img/logo-login.png);
-        height: 200px;
-        width: 200px;
-        margin-top: 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 
     .buttons-container {
@@ -207,55 +218,127 @@
     }
 }
 
+/* Tablet Media scren */
+@media (max-width: 760px) {
+    .hero-title {
+        width: 450px;
+    }
+    /* Hero */
+    #hero{
+        flex-direction: column;
+        height: 1300px;
+        padding: 0px;
+    }
+    .hero-part1 {
+        margin-top: 150px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .hero-part2 {
+        height: 50%;
+        display: block;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .subtitle-info {
+        width: 100%;
+    }
+
+    .buttons-container {
+        gap: 5px;
+    }
+
+    .carrousel {
+        max-width: 55vh;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .information-title h2 {
+        text-align: center;
+    }
+
+    .carrousel .img-carrousel {
+        width: 300px;
+        height: 400px;
+    }
+
+    .card-img-games {
+        width: 350px;
+        height: 80%;
+    }
+
+    .subtitle-hero {
+        text-align: center;
+    }
+
+    .disabled-mq {
+        display: none;
+    }
+    .buttons-container {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .text-games-container{
+        margin-bottom: 100px;
+    }
+    #section-games{
+        margin-bottom: 0px;
+    }
+    #section-comics{
+        margin-top: 50px;
+    }
+}
+
 /* Celu */
 @media (max-width: 576px) {
 
     /* Hero */
+    #hero{
+        flex-direction: column;
+        height: 1300px;
+        padding: 0px;
+    }
     .hero-part1 {
         width: 100%;
+       height: 50%;
+       margin-bottom: 100px;
     }
 
     .hero-title {
         width: 400px;
     }
-
     .hero-part2 {
-        display: none;
+        height: 50%;
+        display: block;
+        width: 100%;
+        border-radius: 0px;
     }
 
     .title-container {
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
     .subtitle-container {
         margin-top: 50px;
     }
-
-    .sticker-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
+    .contenedor-1{
+        width: 100%;
     }
-
-    .sticker-responsive {
-        background-image: url(/assets/img/logo-login.png);
-        height: 200px;
-        width: 200px;
-        margin-top: 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
     .contenido h2{
         font-size: 40px;
         text-align: center;
         width: 300px;
     }
+    .contenido p{
+        width: 100%;
+    }
     /* Information */
     #information {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     /*  Movies */
@@ -268,7 +351,7 @@
     }
 
     .carrousel {
-        max-width: 55vh;
+        max-width: 45vh;
         width: 100%;
     }
 
@@ -339,6 +422,9 @@
         gap: 10px;
         flex-wrap: wrap;
     }
+    .category{
+        width: 180px;
+    }
 
     /* footer */
     #footer {
@@ -360,11 +446,15 @@
 
 }
 
-@media (max-width:495px) {
+@media (max-width:515px) {
     .hero-title {
         width: 400px;
     }
-
+    .hero-part1 {
+        width: 100%;
+       height: 50%;
+       margin-bottom: 200px;
+    }
     .carrousel {
         max-width: 40vh;
         width: 100%;
@@ -392,10 +482,22 @@
         width: 200px;
         height: 310px;
     }
+    .text-games{
+       height: 450px;
+       margin-bottom: 100px;
+    }
+    .games-card-container{
+        height: 1000px;
+    }
 }
 
 @media(max-width:400px) {
     .hero-title {
         width: 320px;
+    }
+    .carrousel {
+        max-width: 40vh;
+        width: 100%;
+        margin-bottom: 100px;
     }
 }
