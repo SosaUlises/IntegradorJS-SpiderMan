@@ -391,13 +391,9 @@
     }
 
     .games-card-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 10px;
-        width: 100%;
     }
 
     .card-img-games {
@@ -475,6 +471,7 @@
     .information-title h2 {
         font-size: 30px;
     }
+    
 }
 
 @media(max-width:375px) {
@@ -487,7 +484,11 @@
        margin-bottom: 100px;
     }
     .games-card-container{
-        height: 1000px;
+        height: 600px;
+    }
+    .card-img-games{
+        width: 150px;
+        height: 200px;
     }
 }
 
