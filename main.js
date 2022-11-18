@@ -118,7 +118,7 @@ const changeShowMoreBtnState = (category) => {
         btnverMas.classList.add("hidden");
     }
 };
-
+// Cambiar el color del boton seleccionado en category
 const changeBtnActiveState = (selectedCategory) => {
     const categories = [...categoriesList];
     categories.forEach(categoryBtn => {
@@ -182,7 +182,7 @@ const toggleCart = () => {
     }
 };
 
-//Funcion que cierra el menu y carrito si se scrollea}
+//Funcion que cierra el menu y carrito si se scrollea
 const closeOnScroll = () => {
     if (
         !barsMenu.classList.contains('open-menu') &&
@@ -194,13 +194,13 @@ const closeOnScroll = () => {
     cartMenu.classList.remove('open-cart');
     overlay.classList.remove('show-overlay');
 };
-
+// Funcion overlay
 const closeOnClick = (e) => {
     if (!e.target.classList.contains("navbar-link")) return;
     barsMenu.classList.remove("open-menu");
     overlay.classList.remove("show-overlay");
 };
-
+// Funcion overlay
 const closeOnOverlayClick = () => {
     barsMenu.classList.remove("open-menu");
     cartMenu.classList.remove("open-cart");
@@ -237,15 +237,15 @@ const renderCart = () => {
         productsCart.innerHTML = cart.map(renderCartProduct).join("");
     }
 }
-
+// Obtenemos el total
 const getCartTotal = () => {
     return cart.reduce((acc, cur) => acc + Number(cur.precio) * cur.quantity, 0);
 };
-
+// Mostramos total
 const showTotal = () => {
     total.innerHTML = `$${getCartTotal().toFixed(2)}`
 };
-
+// Desabilitar BTN de carrito
 const disableBtn = (btn) => {
     if (!cart.length) {
       btn.classList.add("disabled");
@@ -253,11 +253,11 @@ const disableBtn = (btn) => {
       btn.classList.remove("disabled");
     }
   };
-
+// Crear un producto
 const createProductData = (id, name, precio, edicion, img) => {
     return { id, name, precio, edicion, img };
 };
-
+// Comprobamos si existe el producto
 const isExistingCartProduct = (product) => {
     return cart.find((item) => item.id === product.id);
 };
@@ -274,7 +274,7 @@ const addUnitToProduct = (product) => {
 const createCartProduct = (product) => {
     cart = [...cart, { ...product, quantity: 1 }];
 };
-
+//Funcion mostrar Modal
 const showSuccessModal = (msg) => {
     successModal.classList.add("active-modal");
     successModal.textContent = msg;
@@ -282,7 +282,7 @@ const showSuccessModal = (msg) => {
         successModal.classList.remove("active-modal");
     }, 1500);
 };
-
+// Check estado del carrito
 const checkCartState = () => {
     saveLocalStorage(cart);
     renderCart(cart);
@@ -290,7 +290,7 @@ const checkCartState = () => {
     disableBtn(buyBtn);
     disableBtn(deleteBtn);
 };
-
+// Agregar productos
 const addProduct = (e) => {
     if (!e.target.classList.contains("btn-add")) return;
     const { id, name, precio, edicion, img } = e.target.dataset;
@@ -316,7 +316,7 @@ const removeProductFromCart = (existingProduct) => {
     cart = cart.filter((product) => product.id !== existingProduct.id);
     checkCartState();
 };
-
+// Quitamos una unidad del producto
 const substractProductUnit = (existingProduct) => {
     cart = cart.map((product) => {
         return product.id === existingProduct.id
@@ -324,7 +324,7 @@ const substractProductUnit = (existingProduct) => {
             : product;
     });
 };
-
+// Funcion inicializadora del delet
 const handleMinusBtnEvent = (id) => {
     const existingCartProduct = cart.find((item) => item.id === id);
 
@@ -339,12 +339,12 @@ const handleMinusBtnEvent = (id) => {
     // Restar uno al producto existente
     substractProductUnit(existingCartProduct);
 };
-
+// Funcion para agregar una unidad
 const handlePlusBtnEvent = (id) => {
     const existingCartProduct = cart.find((item) => item.id === id);
     addUnitToProduct(existingCartProduct);
 };
-
+// Funcion para sumar o restar productos del carro con +/-
 const handleQuantity = (e) => {
     if (e.target.classList.contains("down")) {
         handleMinusBtnEvent(e.target.dataset.id);
@@ -353,7 +353,7 @@ const handleQuantity = (e) => {
     }
     checkCartState();
 };
-
+// Resetear el carrito
 const resetCartItems = () => {
     cart = [];
     checkCartState();
@@ -376,6 +376,7 @@ const deleteCart = () => {
 };
 
 // Funcion inicializadora
+// EVENTOS
 const init = () => {
     renderComics();
     categories.addEventListener("click", applyFilter);
